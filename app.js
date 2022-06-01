@@ -12,3 +12,10 @@ const myExecutor = (resolve, reject) => {
       }
     }
     
+    const orderSunglasses = () => {
+        return new Promise(myExecutor);
+    };
+    
+    const orderPromise = orderSunglasses();
+    
+    console.log(orderPromise)
